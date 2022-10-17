@@ -5,8 +5,8 @@ WHERE last_name
 LIKE 'Wahlberg';
 
 -- answer:  count|
-			-----+
-			    2|
+	    -----+
+		2|
 
 
 
@@ -17,8 +17,8 @@ FROM payment
 WHERE amount BETWEEN 3.99 AND 5.99;
 
 -- answer:  count|
-			-----+
-			 5607|
+	    -----+
+	     5607|
 
 
 
@@ -29,8 +29,8 @@ FROM inventory
 WHERE film_id = 7;
 
 -- answer:  count|
-			-----+
-			    5|
+	    -----+
+	        5|
 
 
 
@@ -42,8 +42,8 @@ WHERE first_name
 LIKE 'Willie';
 
 -- answer: count|
-			----+
-			   2|
+	    ----+
+	       2|
 
 
 
@@ -57,8 +57,8 @@ ORDER BY count(rental_id) DESC
 LIMIT 1;
 
 -- answer:  staff_id|count|
-			--------+-----+
-			       1| 8040|
+	    --------+-----+
+	           1| 8040|
 
 
 
@@ -70,8 +70,8 @@ FROM address;
 
 
 -- answer:  count|
-			-----+
-			  378|
+	    -----+
+	      378|
 
 
 
@@ -84,8 +84,8 @@ GROUP BY film_id
 ORDER BY count(actor_id) DESC;
 
 --answer:	count|film_id|
-			-----+-------+
-			   15|    508|
+		-----+-------+
+		   15|    508|
 
 
 
@@ -95,8 +95,8 @@ FROM customer
 WHERE store_id = 1 AND last_name LIKE '%es'
 
 -- answer:  count|
-			-----+
-			   13|
+	    -----+
+	       13|
 
 
 
@@ -109,10 +109,10 @@ GROUP BY amount
 HAVING count(customer_id) >= 250;
 
 -- answer:  amount|count|
-			------+-----+
-			  2.99|  290|
-			  4.99|  281|
-			  0.99|  269|
+	    ------+-----+
+	      2.99|  290|
+	      4.99|  281|
+	      0.99|  269|
 
 
 
@@ -124,9 +124,9 @@ GROUP BY rating
 ORDER BY count(film_id);
 
 answer: rating|count|
-		------+-----+
-		G     |  178|
-		PG    |  194|
-		R     |  195|
-		NC-17 |  210|
-		PG-13 |  223|
+	------+-----+
+	G     |  178|
+	PG    |  194|
+	R     |  195|
+	NC-17 |  210|
+	PG-13 |  223|
